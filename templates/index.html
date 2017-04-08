@@ -1,33 +1,19 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Tiny Project</title>
-	
-		<!--<link rel=stylesheet type=text/css href='/static/style.css'>-->
-	</head>
-	<body>
-		<div class=page>
-  			<h1>User Input</h1>
-  			<div id="category1">
-			<p><strong>Address</strong> The correct answer is the <strong>Address</strong>.</p>
-			</div>
+<!DOCTYPE html>
+<html>
+<body>
 
-    			<h4>Please enter your Address, City, State.</h4>
+<h2>Send e-mail to christian.templeton@gmail.com:</h2>
 
-    			<form id='input' method='post' action='index'>	
-	  			<p>
-					Address: <input type="text" name='Address, City, State' id="q1a"><label for="q1a">Address</label>
-	  			</p>
-	  			<p>
-	
-	    			<div id="results">
-Find me!
-</div>
-	  			</p>
-				</form>
+<form action="mailto:christian.templeton@gmail.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
 
-  			</div>
-		</div>
-	</body>
+</body>
 </html>
