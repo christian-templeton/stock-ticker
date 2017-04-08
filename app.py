@@ -1,6 +1,5 @@
-from flask import Flask, render_template, request, redirect
-
-app = Flask(__name__)
+# import things
+from flask_table import Table, Col
 
 # (Year, month, day) tuples suffice as args for quotes_historical_yahoo
 date1 = (2016, 9, 13)
@@ -30,7 +29,11 @@ ax.xaxis_date()
 ax.autoscale_view()
 plt.setp(plt.gca().get_xticklabels(), rotation=45, horizontalalignment='right')
 
-plt.show()
+# Populate the table
+table = plt.show()
 
-if __name__ == '__main__':
-  app.run(port=33507)
+# Print the html
+print(table.__html__())
+# or just {{ table }} from within a Jinja template
+
+
