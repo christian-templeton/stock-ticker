@@ -2,13 +2,6 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-
-import matplotlib.pyplot as plt
-from matplotlib.dates import DateFormatter, WeekdayLocator,\
-    DayLocator, MONDAY
-from matplotlib.finance import quotes_historical_yahoo_ohlc, candlestick_ohlc
-
-
 # (Year, month, day) tuples suffice as args for quotes_historical_yahoo
 date1 = (2016, 9, 13)
 date2 = (2016, 11, 24)
@@ -37,19 +30,7 @@ ax.xaxis_date()
 ax.autoscale_view()
 plt.setp(plt.gca().get_xticklabels(), rotation=45, horizontalalignment='right')
 
-
-
-
-@app.route('/')
-def main():
-  return redirect('/index')
-
-@app.route('/index')
-def index():
-  plt.show()
-
-
-
+plt.show()
 
 if __name__ == '__main__':
   app.run(port=33507)
