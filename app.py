@@ -21,13 +21,13 @@ def main():
 @app.route('/index')
 def index():
 
-    # import api key
-    quandl.ApiConfig.api_key = 'veCdQMWydzdrbYxvUqkr'
-    # Retrieve data from quandl
-    tableau = quandl.get('WIKI/DATA')
-    df = pd.DataFrame(tableau).tail(365)
-    return df
+   # a data frame
+    df1 = pd.DataFrame({
+    'number': [1, 2, 3],
+    'animal': ['cat', 'dog', 'mouse']
+    })
 
+return df1
   
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
