@@ -1,6 +1,4 @@
 from flask import Flask, render_template, request, redirect
-from pandas import DataFrame
-
 
 
 
@@ -15,8 +13,9 @@ def main():
 def index():
   
 
+    name = input('Hi, I\'m Rye and I\'m a serviceDoodle. What\'s your name?')
 
-    return 'Hello there '
+    return 'Hello there ', name + '!!!!!'
 
 
 
