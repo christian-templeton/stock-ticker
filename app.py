@@ -22,9 +22,9 @@ def main():
 def index():
     acq = pd.read_html('https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Alphabet', header=0, parse_dates=False)
 
-    acquisitions = acq[0]
+    print acq[0]
 
-    return acquisitions
+  
   
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
