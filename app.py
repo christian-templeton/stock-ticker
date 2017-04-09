@@ -12,7 +12,8 @@ def main():
 @app.route('/index')
 def index():
   
-    return [i for i in range(10)]
+    listed = [i for i in range(10)]
+    return listed
 
     
 
