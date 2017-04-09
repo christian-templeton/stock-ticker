@@ -15,7 +15,7 @@ def index():
 
    
 
-    print 'Hello there '
+    return 'Hello there '
 
 
 
