@@ -15,7 +15,12 @@ def index():
 
    
 
-    return 'Hello there '
+    list1 = range(120)
+    list2 = range(518)
+
+    comp1 = [i for i in range(len(list2))]
+
+    return comp1
 
 
 
