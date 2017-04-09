@@ -13,9 +13,9 @@ def main():
 def index():
   
 
-    name = input('Hi, I\'m Rye and I\'m a serviceDoodle. What\'s your name?')
+   
 
-    return 'Hello there ', name + '!!!!!'
+    return 'Hello there ', input('name')
 
 
 
