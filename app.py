@@ -18,9 +18,13 @@ def main():
 
 @app.route('/index')
 def index():
-    print 'this is a test'
+    name = input('What\'s your name?')
+    exclaim = '!'
+    multiply = exclaim * 3
 
-  
-  
+    return 'Hello there ' + name + multiply
+
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
