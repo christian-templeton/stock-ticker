@@ -10,12 +10,12 @@ def main():
     return redirect('/index')
 
 @app.route('/index')
-def index():
+def index(name):
   
 
    
 
-    return 'Hello there ', raw_input('name')
+    return 'Hello there ', name
 
 
 
