@@ -15,7 +15,7 @@ def index():
 
    
 
-    return 'Hello there ', input('name')
+    return 'Hello there ', raw_input('name')
 
 
 
