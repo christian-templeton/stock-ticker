@@ -8,11 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import quandl
 
-# import api key
-quandl.ApiConfig.api_key = 'veCdQMWydzdrbYxvUqkr'
-# Retrieve data from quandl
-tableau = quandl.get('WIKI/DATA')
-df = pd.DataFrame(tableau).tail(365)
+
 
 
 
@@ -25,7 +21,11 @@ def main():
 @app.route('/index')
 def index():
 
-
+    # import api key
+    quandl.ApiConfig.api_key = 'veCdQMWydzdrbYxvUqkr'
+    # Retrieve data from quandl
+    tableau = quandl.get('WIKI/DATA')
+    df = pd.DataFrame(tableau).tail(365)
     return df
 
   
