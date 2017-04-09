@@ -1,10 +1,5 @@
 #!/usr/bin/env python
 from flask import Flask, render_template, request, redirect
-import sys
-
-name = input('What\'s your name?')
-exclaim = '!'
-multiply = exclaim * 3
 
 app = Flask(__name__)
 
@@ -14,11 +9,7 @@ def main():
 
 @app.route('/index')
 def index():
-    if name == 'Christian':
-        print 'Hello there ' + name + multiply
-    else:
-        print 'Hello there ' + name
-
-
+    return 'Hello there '
+  
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
