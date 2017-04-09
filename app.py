@@ -1,6 +1,4 @@
-#!/usr/bin/env python
 from flask import Flask, render_template, request, redirect
-# import libraries
 import datetime
 import pandas as pd
 from pandas import DataFrame
@@ -20,8 +18,7 @@ def main():
 
 @app.route('/index')
 def index():
-
-    return "this is a test"
+    print 'this is a test'
 
   
   
