@@ -26,8 +26,7 @@ def index():
     'number': [1, 2, 3],
     'animal': ['cat', 'dog', 'mouse']
     })
-
-return df1
+df1
   
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
