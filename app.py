@@ -12,7 +12,7 @@ def main():
 @app.route('/index')
 def index():
   
-    listed = [i for i in range(10)]
+    listed = "hello there"
     return listed
 
     
