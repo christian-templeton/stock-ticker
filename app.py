@@ -12,15 +12,9 @@ def main():
 @app.route('/index')
 def index():
   
+    return [i for i in range(10)]
 
-   
-
-    list1 = range(120)
-    list2 = range(518)
-
-    comp1 = [i for i in range(len(list2))]
-
-    return comp1
+    
 
 
 
