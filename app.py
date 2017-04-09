@@ -18,11 +18,8 @@ def main():
 
 @app.route('/index')
 def index():
-    name = input('What\'s your name?')
-    exclaim = '!'
-    multiply = exclaim * 3
-
-    return 'Hello there ' + name + multiply
+   
+    return 'Hello there '
 
 
 
