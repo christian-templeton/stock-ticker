@@ -13,8 +13,10 @@ def main():
 
 @app.route('/index')
 def index():
-   
-    return 'Hello there '
+    name = input('What\'s your name?')
+
+
+    return 'Hello there ' name
 
 
 
